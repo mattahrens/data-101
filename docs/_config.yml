@@ -1,4 +1,5 @@
-remote_theme: just-the-docs/just-the-docs  #pages-themes/architect@v0.2.0
+remote_theme: just-the-docs/just-the-docs
+color_schema: blue
 plugins:
   - jekyll-remote-theme
   - jekyll-optional-front-matter
