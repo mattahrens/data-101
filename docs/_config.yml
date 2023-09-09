@@ -1,5 +1,5 @@
 remote_theme: just-the-docs/just-the-docs
-color_schema: blue
+color_scheme: blue
 plugins:
   - jekyll-remote-theme
   - jekyll-optional-front-matter
