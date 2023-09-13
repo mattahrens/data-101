@@ -11,7 +11,7 @@ description: Lesson 1: What is data
 - Understand the definition of data
 - Understand why it's important to learn about data
 
-## Content
+## Concept
 
 ### Defining Data
 The word data, as defined in a dictionary, has a couple of different meanings:
