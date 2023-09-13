@@ -2,10 +2,14 @@
 layout: page
 title: Lecture 1
 nav_order: 2
-description: Lecture 1: What is data
+description: Lesson 1: What is data
 ---
-# Lecture 1: What is data
-## Defining Data
+# Lesson 1: What is data
+## Objectives
+- Understand the definition of data
+- Understand why it's important to learn about data
+## Content
+### Defining Data
 The word data, as defined in a dictionary, has a couple of different meanings:
 - facts or information used usually to calculate, analyze, or plan something
 - information that is produced or stored by a computer
@@ -27,13 +31,16 @@ To summarize, data is a:
 - that is attributable to something (or someone)
 - that can be measured or compared
 
-## Why learn about data
+### Why learn about data
 
 Now that we know what data is, why does it matter to learn about data and how to use it effectively?
 
-## Where we're headed
+### Where we're headed
 
 For our journey into the world of data, we're going to start with **concepts** about data and then move into **practices** of data. It is important to understand key concepts about how to collect data, organize data, summarize data (and more) before we work to understand the practices of data including how to use computers effectively to work with data.
 
 In the concepts portion, we'll use examples of sets of data to help us understand better the various principles of data. And then in the practices section, we'll have different tools to leverage to work with sets of data.
 
+## Practice
+
+## Summary
