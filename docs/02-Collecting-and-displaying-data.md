@@ -2,9 +2,9 @@
 layout: page
 title: Lesson 2
 nav_order: 3
-description: Lesson 2: Collecting and displaying data in Google Sheets
+description: Lesson 2: Collecting and displaying data
 ---
-# Lesson 2: Collecting and displaying data in Google Sheets
+# Lesson 2: Collecting and displaying data
 
 ## Objective
 
