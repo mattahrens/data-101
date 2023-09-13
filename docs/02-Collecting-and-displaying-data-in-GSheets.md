@@ -64,9 +64,9 @@ We can now work with an actual set of data to compare and analyze different attr
 After opening the link, you will want to save your own version of the Google Sheets file by going to File -> Make a copy from the menu and you can rename it to whatever you would like.
 
 ### Exploring the data
-To explore the data, let's start by looking at a few columns.  Each column represents an attribute for the animals.  If you select Column B by clicking the *B* at the top of the column, you will see a `Sum: 43` show up in the bottom right part of the Google Sheet.  That represents summarized information about the column that you have selected.  The value of 43 indicates that there are 43 animals that have hair. 
+To explore the data, let's start by looking at a few columns.  Each column represents an attribute for the animals.  If you select Column B by clicking the B at the top of the column, you will see a `Sum: 43` show up in the bottom right part of the Google Sheet.  That represents summarized information about the column that you have selected.  The value of 43 indicates that there are 43 animals that have hair. 
 
-If you continue to look at other columns, you will see that the majority of them have values of 0 or 1.  Those columns represent _yes or no_ characteristics where a 1 indicates the animal has the attribute and a 0 indicates the animal does not have the attribute.  These types of characteristics are also known as *Boolean* (true or false) or *binary* (0 or 1) attributes.
+If you continue to look at other columns, you will see that the majority of them have values of 0 or 1.  Those columns represent **yes or no** characteristics where a 1 indicates the animal has the attribute and a 0 indicates the animal does not have the attribute.  These types of characteristics are also known as **Boolean** (true or false) or **binary** (0 or 1) attributes.
 
 If you scroll to the right, you will see a column called *legs*. That column is not a Boolean or binary attribute since the values range from 0 to 8.  The last column on the right is a column *total* which was added by summing up the values of all the attributes.  
 
