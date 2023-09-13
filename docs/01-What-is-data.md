@@ -5,10 +5,14 @@ nav_order: 2
 description: Lesson 1: What is data
 ---
 # Lesson 1: What is data
+
 ## Objectives
+
 - Understand the definition of data
 - Understand why it's important to learn about data
+
 ## Content
+
 ### Defining Data
 The word data, as defined in a dictionary, has a couple of different meanings:
 - facts or information used usually to calculate, analyze, or plan something
@@ -33,7 +37,9 @@ To summarize, data is a:
 
 ### Why learn about data
 
-Now that we know what data is, why does it matter to learn about data and how to use it effectively?
+Now that we know what data is, why does it matter to learn about data and how to use it effectively?  Data has been central to so much of what happens in the world.  With the amount of avavailable data growing each day, we are finding more use cases to use data to make decisions and to even automate tasks.  Data is powering much of the revolution in artificial intelligence and every industry is now looking to leverage data for advancements.
+
+Understanding how to work with data is important for problem solving and innovation.  Data analysis is useful for identifying pattern and trends in information.  Exploring data can help uncover new opportunities for innovation.  Given how much the world uses data, having an understanding of data is imperative to make sense of what is happening.
 
 ### Where we're headed
 
@@ -43,4 +49,10 @@ In the concepts portion, we'll use examples of sets of data to help us understan
 
 ## Practice
 
+For our first practice, it will be an exercise for you to define data about yourself.  Think about what attributes make up who you are.  And then consider how your attributes can be measured or compared to others.  
+
+For example, you can think about how tall you are or what your hair color is.  Write down a set of attributes and you know have entered the world of data!
+
 ## Summary
+
+Data is fact or piece of information that is attributable to something (or someone) and that can be measured or compared.  Data is a key part of how the world works and understanding how to work with data is a very critical skill in our world.
