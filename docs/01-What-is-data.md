@@ -37,12 +37,18 @@ To summarize, data is:
 
 ### Why learn about data
 
-Now that we know what data is, why does it matter to learn about data and how to use it effectively?  Data has become central to so much of what happens in the world.  With the amount of avavailable data growing each day, we are finding more use cases to use data to make decisions and to even automate tasks.  Data has become valuable and is considered essential to how the world works, similar to how oil is used to power so much of the world.
+Now that we know what data is, why does it matter to learn about data and how to use it effectively?  Data has become central to so much of what happens in the world.  With the amount of available data growing each day, we are finding more use cases to use data to make decisions and to even automate tasks.  Here are examples of ways that data is in our everyda life:
+
+- When you see a weather forecast, that is using data to try to predict what the weather will be like.
+- When you use a video service like Netflix or Youtube, the recommendations you see are based on data from what you've previously watched and what others have watched.
+- When you go to a store to buy groceries or clothes, the amount of a certain product that is available on the shelf is based on historical data of what people have purchased.
+
+Data has become valuable and is considered essential to how the world works, similar to how oil is used to power so much of the world.
 
 ![image](images/data_is_the_new_oil.png)
 *Source: Economist (2017)*
 
-One of the reasons why data has become so valuable is become there is so much of it available with so many people around the world on the internet.  With over 2000 zettabytes expected to be generated in the year 2035, that is 1000x more data than what was generated in 2010.  That is a lot of data!
+One of the reasons why data is so valuable is because there is so much of it available with so many people around the world on the internet.  With over 2000 zettabytes expected to be generated in the year 2035, that is 1000x more data than what was generated in 2010.  That is a lot of data!
 
 ![image](images/global_data_size.jpg)
 
