@@ -37,14 +37,14 @@ To summarize, data is:
 
 ### Why learn about data
 
+Now that we know what data is, why does it matter to learn about data and how to use it effectively?  Data has become central to so much of what happens in the world.  With the amount of avavailable data growing each day, we are finding more use cases to use data to make decisions and to even automate tasks.  Data has become valuable and is considered essential to how the world works, similar to how oil is used to power so much of the world.
+
 ![image](images/data_is_the_new_oil.png)
 *Source: Economist (2017)*
 
-Now that we know what data is, why does it matter to learn about data and how to use it effectively?  Data has become central to so much of what happens in the world.  With the amount of avavailable data growing each day, we are finding more use cases to use data to make decisions and to even automate tasks.  Data has become valuable and is considered essential to how the world works, similar to how oil is used to power so much of the world.
+One of the reasons why data has become so valuable is become there is so much of it available with so many people around the world on the internet.  With over 2000 zettabytes expected to be generated in the year 2035, that is 1000x more data than what was generated in 2010.  That is a lot of data!
 
 ![image](images/global_data_size.jpg)
-
-One of the reasons why data has become so valuable is become there is so much of it available with so many people around the world on the internet.  With over 2000 zettabytes expected to be generated in the year 2035, that is 1000x more data than what was generated in 2010.  That is a lot of data!
 
 Understanding how to work with data is important for problem solving and innovation.  Data analysis is useful for identifying pattern and trends in information.  Exploring data can help uncover new opportunities for innovation.  Given how much the world uses data, having an understanding of data is imperative to make sense of what is happening.
 
