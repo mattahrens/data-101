@@ -20,9 +20,9 @@ The word data, as defined in a dictionary, has a couple of different meanings:
 
 For our purposes, we'll be focusing on the first definition, specifically that data is facts or information. That is a very wide open definition but it is useful as a starting point to understand data as facts.
 
-![image](images/united_states_map.jpg)
-
 To expand on the definition of data as facts, I suggest that we think of data as a fact that can be assigned to something (or someone). So the fact that the United States land area us around 3.8 million square miles is data because it is a fact about the United States. If I just told you the information *3.8 million square miles*, then that is just a number that isn't associated with something.
+
+![image](images/united_states_map.jpg)
 
 Similarly, if I told you the information *6 feet, 6 inches*, that wouldn't necessarrily be data. But if I tell you that the average height of NBA basketball players is *6 feet, 6 inches*, that is a piece of data. And it becomes a piece of data that can be compared to another piece of data, such as the fact that the average height of an NFL football player is *6 feet, 2 inches*.
 
@@ -39,7 +39,9 @@ To summarize, data is a:
 
 ### Why learn about data
 
-Now that we know what data is, why does it matter to learn about data and how to use it effectively?  Data has been central to so much of what happens in the world.  With the amount of avavailable data growing each day, we are finding more use cases to use data to make decisions and to even automate tasks.  Data is powering much of the revolution in artificial intelligence and every industry is now looking to leverage data for advancements.
+Now that we know what data is, why does it matter to learn about data and how to use it effectively?  Data has become central to so much of what happens in the world.  With the amount of avavailable data growing each day, we are finding more use cases to use data to make decisions and to even automate tasks.  Data is powering much of the revolution in artificial intelligence and every industry is now looking to leverage data for advancements.
+
+![image](Source: Economist, 2017 images/data_is_the_new_oil.png)
 
 Understanding how to work with data is important for problem solving and innovation.  Data analysis is useful for identifying pattern and trends in information.  Exploring data can help uncover new opportunities for innovation.  Given how much the world uses data, having an understanding of data is imperative to make sense of what is happening.
 
