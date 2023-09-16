@@ -32,17 +32,19 @@ Let's take another example about weather. If I tell you that yesterday was windy
 
 One clarification here is that subjective attributes like smart and windy could become measurable if they become a comparable attribute. For example, you could classify each day in terms of weather as windy, sunny, cloud, rainy, snowy, and so on. And then you could analyze the patterns of weather by days using that. So facts or information can become measurable if they are collected in such a way that they can be related to comparable attributes.
 
-To summarize, data is a:
-- fact or piece of information
-- that is attributable to something (or someone)
-- that can be measured or compared
+To summarize, data is:
+![image](images/data_definition.png)
 
 ### Why learn about data
 
-Now that we know what data is, why does it matter to learn about data and how to use it effectively?  Data has become central to so much of what happens in the world.  With the amount of avavailable data growing each day, we are finding more use cases to use data to make decisions and to even automate tasks.  Data is powering much of the revolution in artificial intelligence and every industry is now looking to leverage data for advancements.
-
 ![image](images/data_is_the_new_oil.png)
 *Source: Economist (2017)*
+
+Now that we know what data is, why does it matter to learn about data and how to use it effectively?  Data has become central to so much of what happens in the world.  With the amount of avavailable data growing each day, we are finding more use cases to use data to make decisions and to even automate tasks.  Data has become valuable and is considered essential to how the world works, similar to how oil is used to power so much of the world.
+
+![image](images/global_data_size.jpg)
+
+One of the reasons why data has become so valuable is become there is so much of it available with so many people around the world on the internet.  With over 2000 zettabytes expected to be generated in the year 2035, that is 1000x more data than what was generated in 2010.  That is a lot of data!
 
 Understanding how to work with data is important for problem solving and innovation.  Data analysis is useful for identifying pattern and trends in information.  Exploring data can help uncover new opportunities for innovation.  Given how much the world uses data, having an understanding of data is imperative to make sense of what is happening.
 
