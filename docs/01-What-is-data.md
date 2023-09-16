@@ -22,7 +22,7 @@ For our purposes, we'll be focusing on the first definition, specifically that d
 
 To expand on the definition of data as facts, I suggest that we think of data as a fact that can be assigned to something (or someone). So the fact that the United States land area us around 3.8 million square miles is data because it is a fact about the United States. If I just told you the information *3.8 million square miles*, then that is just a number that isn't associated with something.
 
-![image](images/united_states_map.jpg)
+![image](images/united_states_map.png)
 
 Similarly, if I told you the information *6 feet, 6 inches*, that wouldn't necessarrily be data. But if I tell you that the average height of NBA basketball players is *6 feet, 6 inches*, that is a piece of data. And it becomes a piece of data that can be compared to another piece of data, such as the fact that the average height of an NFL football player is *6 feet, 2 inches*.
 
