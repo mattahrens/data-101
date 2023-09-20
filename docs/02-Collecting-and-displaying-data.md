@@ -42,7 +42,7 @@ It's time to look at some examples to help us understand all of this better.
 
 ### Example 1: Countries
 
-![image](images/world_map.png)
+![image](images/02-world_map.png)
 
 Let's go through an example of collecting data about countries of the world.  The object that we will be collecting facts about is a country.  Next we want to consider what facts about countries that we want to collect.  Possible facts to collect include:
 
@@ -79,7 +79,7 @@ After opening the link, you will want to save your own version of the Google She
 
 To explore the data, let's start by looking at a few columns.  Each column represents an attribute for the animals.  If you select Column B by clicking the B at the top of the column, you will see a `Sum: 43` show up in the bottom right part of the Google Sheet.  That represents summarized information about the column that you have selected.  The value of 43 indicates that there are 43 animals that have hair. 
 
-![image](images/gsheet_columnb.png)
+![image](images/02-gsheet_columnb.png)
 
 If you continue to look at other columns, you will see that the majority of them have values of 0 or 1.  Those columns represent **yes or no** characteristics where a 1 indicates the animal has the attribute and a 0 indicates the animal does not have the attribute.  These types of characteristics are also known as **Boolean** (true or false) or **binary** (0 or 1) attributes.
 
@@ -87,6 +87,8 @@ If you scroll to the right, you will see a column called *legs*. That column is 
 
 ### Displaying the data
 
-We can take our exploration a step further by displaying the data. TBD...
+We can take our exploration a step further by displaying the data. To create a chart in Google Sheets, you first need to select the data you want to display. For a simple example, let's select the *total* column (which is Column R in the Google Sheet).  After that is selected, go to the menu at the top and navigate to Insert -> Chart.  Once you set the Chart editor menu on the right, select the Chart type to be *Histogram chart*.
+
+![image](images/02-gsheet_chart.png)
 
 ## Summary

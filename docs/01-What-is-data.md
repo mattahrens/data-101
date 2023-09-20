@@ -22,7 +22,7 @@ For our purposes, we'll be focusing on the first definition, specifically that d
 
 To expand on the definition of data as facts, I suggest that we think of data as a fact that can be assigned to something (or someone). So the fact that the United States land area us around 3.8 million square miles is data because it is a fact about the United States. If I just told you the information *3.8 million square miles*, then that is just a number that isn't associated with something.
 
-![image](images/united_states_map.png)
+![image](images/01-united_states_map.png)
 
 Similarly, if I told you the information *6 feet, 6 inches*, that wouldn't necessarrily be data. But if I tell you that the average height of NBA basketball players is *6 feet, 6 inches*, that is a piece of data. And it becomes a piece of data that can be compared to another piece of data, such as the fact that the average height of an NFL football player is *6 feet, 2 inches*.
 
@@ -33,7 +33,7 @@ Let's take another example about weather. If I tell you that yesterday was windy
 One clarification here is that subjective attributes like smart and windy could become measurable if they become a comparable attribute. For example, you could classify each day in terms of weather as windy, sunny, cloud, rainy, snowy, and so on. And then you could analyze the patterns of weather by days using that. So facts or information can become measurable if they are collected in such a way that they can be related to comparable attributes.
 
 To summarize, data is:
-![image](images/data_definition.png)
+![image](images/01-data_definition.png)
 
 ### Why learn about data
 
@@ -45,12 +45,12 @@ Now that we know what data is, why does it matter to learn about data and how to
 
 Data has become valuable and is considered essential to how the world works, similar to how oil is used to power so much of the world.
 
-![image](images/data_is_the_new_oil.png)
+![image](images/01-data_is_the_new_oil.png)
 *Source: Economist (2017)*
 
 One of the reasons why data is so valuable is because there is so much of it available with so many people around the world on the internet.  With over 2000 zettabytes expected to be generated in the year 2035, that is 1000x more data than what was generated in 2010.  That is a lot of data!
 
-![image](images/global_data_size.jpg)
+![image](images/01-global_data_size.jpg)
 
 Understanding how to work with data is important for problem solving and innovation.  Data analysis is useful for identifying pattern and trends in information.  Exploring data can help uncover new opportunities for innovation.  Given how much the world uses data, having an understanding of data is imperative to make sense of what is happening.
 
