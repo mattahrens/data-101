@@ -110,4 +110,4 @@ The output should be a set of records with fields representing what is in your r
 
 ## Summary
 
-When collecting data, you have to consider the main object that you are collecting data for and then what specific facts or attributes about the object that you want to collect.  When data is collected, it is usually represented by records -- where each object is a record -- and by fields -- where each attribute about the object is a field.  You can display data that is collected in different ways.
+When collecting data, you have to consider the main object that you are collecting data for and then what specific facts or attributes about the object that you want to collect.  When data is collected, it is usually represented as a table consisting of records -- where each object is a record -- and fields -- where each attribute about the object is a field.
