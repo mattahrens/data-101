@@ -67,6 +67,16 @@ In general, when we think about what we want to compare for facts, we can group 
 | Languages | Number | Total number of languages |
 | Flag | Category | List of colors |
 
+Given the facts we want to collect, here is an example table of data about a few countries with some of those facts:
+
+| Country | Population (millions) | Size in area (sq miles) | Flag colors |
+| United States | 331.9 | 3.797 | Red, white, blue |
+| Brazil | 214.3 | 3.286 | Green, yellow, blue |
+| Spain | 47.42 | 0.16 | Red, yellow | 
+| Thailan | 71.6 | 0.20 | Red, white, blue | 
+
+When there is a table of data, you can see that there are a couple ways to analyze it.  One is to analyze it by row; in this case, a row would be a specific country like the United States or Brazil.  Or we can analyze it by column; in this example, a column would be population or flag colors.  In general, a row represents a **record** of data and a column represents a *field* about the records.
+
 ## Practice: Animals in Google Sheets
 
 ### Accessing the template
@@ -91,4 +101,12 @@ We can take our exploration a step further by displaying the data. To create a c
 
 ![image](images/02-gsheet_chart.png)
 
+## Practice: Collect Your Data
+
+For an activity to collect data, you will want to go to your room (or think about what is in your room if you were at school) and collect data about what you have.  You can think about how you would want to organize the data about your room in different ways.  You can keep of count of types of objects in your room -- clothes, toys, pictures, clothes, etc.  Or you can also add attributes for objects in your room such as color or size.  
+
+The output should be a set of records with fields representing what is in your room.
+
 ## Summary
+
+When collecting data, you have to consider the main object that you are collecting data for and then what specific facts or attributes about the object that you want to collect.  When data is collected, it is usually represented by records -- where each object is a record -- and by fields -- where each attribute about the object is a field.  You can display data that is collected in different ways.

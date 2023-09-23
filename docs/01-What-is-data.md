@@ -60,7 +60,7 @@ For our journey into the world of data, we're going to start with **concepts** a
 
 In the concepts portion, we'll use examples of sets of data to help us understand better the various principles of data. And then in the practices section, we'll have different tools to leverage to work with sets of data.
 
-## Practice: Creating Your Data
+## Practice: Create Your Data
 
 For our first practice, it will be an exercise for you to define data about yourself.  Think about what attributes make up who you are.  And then consider how your attributes can be measured or compared to others.  
 
