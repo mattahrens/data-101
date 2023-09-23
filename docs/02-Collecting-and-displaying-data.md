@@ -9,6 +9,7 @@ description: Lesson 2: Collecting and displaying data
 ## Objective
 
 - Understand how to collect data
+- Learn how data is represented by records and fields
 - Practice exploring data in Google Sheets 
 
 ## Concept
@@ -40,7 +41,7 @@ For example, in the weather example, are you going to collect the type of weathe
 
 It's time to look at some examples to help us understand all of this better.
 
-### Example 1: Countries
+### Example: Countries
 
 ![image](images/02-world_map.png)
 
@@ -67,15 +68,15 @@ In general, when we think about what we want to compare for facts, we can group 
 | Languages | Number | Total number of languages |
 | Flag | Category | List of colors |
 
-Given the facts we want to collect, here is an example table of data about a few countries with some of those facts:
+When we organize the data that we have collected, it is best viewed as a **table**.  A table will consist of individual objects with facts about each object as part of the table.  Given the facts we want to collect, here is an example table of data about a few countries with some of those facts:
 
 | Country | Population (millions) | Size in area (sq miles) | Flag colors |
 | United States | 331.9 | 3.797 | Red, white, blue |
 | Brazil | 214.3 | 3.286 | Green, yellow, blue |
 | Spain | 47.42 | 0.16 | Red, yellow | 
-| Thailan | 71.6 | 0.20 | Red, white, blue | 
+| Thailand | 71.6 | 0.20 | Red, white, blue | 
 
-When there is a table of data, you can see that there are a couple ways to analyze it.  One is to analyze it by row; in this case, a row would be a specific country like the United States or Brazil.  Or we can analyze it by column; in this example, a column would be population or flag colors.  In general, a row represents a **record** of data and a column represents a *field* about the records.
+When there is a table of data, there are a couple ways to analyze it.  One is to analyze it by row; in this case, a row would be a specific country like the United States or Brazil.  Or we can analyze it by column; in this example, a column would be population or flag colors.  In general, a row represents a **record** of data about an object and a column represents a **field** which contains a fact about the objects.
 
 ## Practice: Animals in Google Sheets
 
@@ -87,17 +88,17 @@ After opening the link, you will want to save your own version of the Google She
 
 ### Exploring the data
 
-To explore the data, let's start by looking at a few columns.  Each column represents an attribute for the animals.  If you select Column B by clicking the B at the top of the column, you will see a `Sum: 43` show up in the bottom right part of the Google Sheet.  That represents summarized information about the column that you have selected.  The value of 43 indicates that there are 43 animals that have hair. 
+To explore the data, let's start by looking at a few fields which are represented as columns.  Each field represents an attribute for the animals.  If you select Column B by clicking the B at the top of the column, you will see a `Sum: 43` show up in the bottom right part of the Google Sheet.  That represents summarized information about the field that you have selected.  The value of 43 indicates that there are 43 animals that have hair. 
 
 ![image](images/02-gsheet_columnb.png)
 
-If you continue to look at other columns, you will see that the majority of them have values of 0 or 1.  Those columns represent **yes or no** characteristics where a 1 indicates the animal has the attribute and a 0 indicates the animal does not have the attribute.  These types of characteristics are also known as **Boolean** (true or false) or **binary** (0 or 1) attributes.
+If you continue to look at other fields in the columns, you will see that the majority of them have values of 0 or 1.  Those fields represent **yes or no** characteristics where a 1 indicates the animal has the attribute and a 0 indicates the animal does not have the attribute.  These types of characteristics are also known as **Boolean** (true or false) or **binary** (0 or 1) attributes.
 
-If you scroll to the right, you will see a column called *legs*. That column is not a Boolean or binary attribute since the values range from 0 to 8.  The last column on the right is a column *total* which was added by summing up the values of all the attributes.  
+If you scroll to the right, you will see a field called *legs*. That field is not a Boolean or binary attribute since the values range from 0 to 8.  The last field on the right is *total* which was added by summing up the values of all the attributes.  
 
 ### Displaying the data
 
-We can take our exploration a step further by displaying the data. To create a chart in Google Sheets, you first need to select the data you want to display. For a simple example, let's select the *total* column (which is Column R in the Google Sheet).  After that is selected, go to the menu at the top and navigate to Insert -> Chart.  Once you set the Chart editor menu on the right, select the Chart type to be *Histogram chart*.
+We can take our exploration a step further by displaying the data. To create a chart in Google Sheets, you first need to select the data you want to display. For a simple example, let's select the *total* field (which is Column R in the Google Sheet).  After that is selected, go to the menu at the top and navigate to Insert -> Chart.  Once you set the Chart editor menu on the right, select the Chart type to be *Histogram chart*.
 
 ![image](images/02-gsheet_chart.png)
 
