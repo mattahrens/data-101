@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Lesson 3
+title: Lesson 3 - Querying data in a pivot table
 nav_order: 4
-description: Lesson 3: Querying data in a pivot table
+description: Lesson 3 - Querying data in a pivot table
 ---
-# Lesson 3: Querying data in a pivot table
+# Lesson 3 - Querying data in a pivot table
 
 ## Objective
 

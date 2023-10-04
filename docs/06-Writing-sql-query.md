@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Lesson 6
+title: Lesson 6 - Writing SQL to query data
 nav_order: 7
-description: Lesson 6: Writing SQL to query data
+description: Lesson 6 - Writing SQL to query data
 ---
-# Lesson 6: Writing SQL to query data
+# Lesson 6 - Writing SQL to query data
 
 ## Objective
 

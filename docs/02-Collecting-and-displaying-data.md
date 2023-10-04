@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Lesson 2
+title: Lesson 2 - Collecting and displaying data
 nav_order: 3
-description: Lesson 2: Collecting and displaying data
+description: Lesson 2 - Collecting and displaying data
 ---
-# Lesson 2: Collecting and displaying data
+# Lesson 2 - Collecting and displaying data
 
 ## Objective
 
