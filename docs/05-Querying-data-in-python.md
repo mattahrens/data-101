@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Lesson 4
-nav_order: 5
-description: Lesson 4: Querying data in Python
+title: Lesson 5
+nav_order: 6
+description: Lesson 5: Querying data in Python
 ---
-# Lesson 4: Querying data in Python
+# Lesson 5: Querying data in Python
 
 ## Objective
 

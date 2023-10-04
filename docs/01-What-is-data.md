@@ -2,7 +2,7 @@
 layout: page
 title: Lesson 1
 nav_order: 2
-description: Lesson 1: What is data
+description: Lesson 1 -- What is data
 ---
 # Lesson 1: What is data
 
