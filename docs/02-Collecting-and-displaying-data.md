@@ -6,7 +6,7 @@ description: Lesson 2 - Collecting and displaying data
 ---
 # Lesson 2 - Collecting and displaying data
 
-## Objective
+## Objectives
 
 - Understand how to collect data
 - Learn how data is represented by records and fields

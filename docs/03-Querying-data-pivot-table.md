@@ -6,7 +6,7 @@ description: Lesson 3 - Querying data in a pivot table
 ---
 # Lesson 3 - Querying data in a pivot table
 
-## Objective
+## Objectives
 
 - Understand what a query is
 - Build a pivot table in Google Sheets
