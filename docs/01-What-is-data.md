@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Lesson 1
+title: Lesson 1 -- What is data
 nav_order: 2
 description: Lesson 1 -- What is data
 ---
