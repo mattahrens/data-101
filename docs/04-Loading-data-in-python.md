@@ -81,4 +81,4 @@ ratings_df.describe()
 ``` 
 
 ## Summary
-In this lesson, we learned how to use Python to create our own dataset and to load a dataset from existing files that we downloaded.  We were introduced to the concept of a dataframe with is how data is represented in Python.  We also learned about functions which are modules of code that allow us to accomplish a specific task.  Some of the functions we practices were print() and describe().
+In this lesson, we learned how to use Python to create our own dataset and to load a dataset from existing files that we downloaded.  We were introduced to the concept of a dataframe with is how data is represented in Python.  We also learned about functions which are modules of code that allow us to accomplish a specific task.  Some of the functions we practices were `print()` and `describe()`.
