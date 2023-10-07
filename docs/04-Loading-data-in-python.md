@@ -42,7 +42,9 @@ df = pd.DataFrame(country_data)
 print(df) 
 ```
 
-Let's go through this code line by line to understand what is happening.  The first line of code is importing the Pandas library so we can use it in our notebook.  Then we create data with that two different fields (Country and Population) with 4 total records, one for each of the country.  Our data is stored in a variable called country_data.  After that, we create the dataframe by passing the data into the pd.DataFrame function and storing it in the df variable.  Finally, we print out the contents of the dataframe that we have created in the df variable.  The output that is printed should look familar in seeing the data represented in rows and columns for the records and fields in the dataset that we have created in the dataframe
+Let's go through this code line by line to understand what is happening.  The first line of code is importing the Pandas library so we can use it in our notebook.  Then we create data with that two different fields (Country and Population) with 4 total records, one for each of the country.  Our data is stored in a variable called country_data.  After that, we create the dataframe by passing the data into the pd.DataFrame function and storing it in the df variable.  Finally, we print out the contents of the dataframe that we have created in the df variable.  The output that is printed should look familar in seeing the data represented in rows and columns for the records and fields in the dataset that we have created in the dataframe.
+
+![image](images/04-colab_country_data.png)
 
 ## Practice: Loading a dataset in Python using Google Colab
 
