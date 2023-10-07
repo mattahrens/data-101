@@ -37,7 +37,7 @@ Going forward, you can copy the code that is displayed here into a new cell in y
 ```
 import pandas as pd
 
-country_data = {'Country': ['United States', 'Brazil', 'Spain', 'Thailand'], 'Population (millions)': [331.9, 214.3, 47.42, 71.6]}
+country_data = {'Country': ['US', 'Brazil', 'Spain', 'Thailand'], 'Population (millions)': [331.9, 214.3]}
 df = pd.DataFrame(country_data)
 print(df) 
 ```
