@@ -74,10 +74,10 @@ The read_csv function takes in parameters on how to load data, including what se
 print(ratings_df)
 ```
 
-You can add similar cells for the `books_df` and `user_df` dataframes as well.  To see full information about the fields in a dataframe, you can use the `describe()` function.
+You can add similar cells for the `books_df` and `user_df` dataframes as well.  To see full information about the fields in a dataframe, you can use the `info()` function.
 
 ```
-ratings_df.describe()
+ratings_df.info()
 ``` 
 
 ## Summary
