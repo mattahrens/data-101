@@ -62,7 +62,7 @@ As we build a query, we first start with what question we want to ask of the dat
 books_df[books_df['Year-Of-Publication'] == '2002'].groupby('Book-Author').count().sort_values(by=['ISBN'], ascending=False)
 ```
 
-For this query, we are added a filter based on the `Year-Of-Publication` field.  To check to make sure the publication year is 2002, we add the `==` operator to check that it is true.  
+For this query, we are adding a filter based on the `Year-Of-Publication` field.  To check to make sure the publication year is 2002, we add the `==` operator to check that it is true.  
 
 ### How many books start with each letter of the alphabet?
 
@@ -75,15 +75,17 @@ Then we can do the query to count how many books start with each first letter:
 books_df.groupby('Book-First-Letter').count().head(25)
 ```
 
+### Build your own queries
+
 OK, now that you've done a couple examples yourself, try to build queries to answer these questions
-- What is the age of the users who did reviews grouped by each age?  Hint: you will have to use the users dataset for this query.
-- What is the overall average age of users?  Hint: you will have to use the `mean()` function.
-- What is the number of ratings at each ratings (0 - 10)?  Hint: you will have to the use the ratings dataset.
-- What is the overall average book rating from all ratings?  Hint: you will have to use the `mean()` function.
-- How many distinct authors are in the dataset?  Hint: you will have to use the books dataset and the `nunique()` function.
+1 What is the age of the users who did reviews grouped by each age?  Hint: you will have to use the users dataset for this query.
+2 What is the overall average age of users?  Hint: you will have to use the `mean()` function.
+3 What is the number of ratings at each ratings (0 - 10)?  Hint: you will have to the use the ratings dataset.
+4 What is the overall average book rating from all ratings?  Hint: you will have to use the `mean()` function.
+5 How many distinct authors are in the dataset?  Hint: you will have to use the books dataset and the `nunique()` function.
 
 If you have successfully built all of those queries to answer the questions, then you are ready to move on.
 
 ## Summary
-
+In this lesson, we learned how to write queries in Python using functions.  We explored our book ratings datasets to ask questions of the data.  We used different functions to help us get the answers we wanteds.  Some of the functions included: `count()`, `groupby()`, `sort_values()`, and `head()`.
 

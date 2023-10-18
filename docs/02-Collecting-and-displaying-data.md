@@ -84,7 +84,7 @@ When there is a table of data, there are a couple ways to analyze it.  One is to
 
 We can now work with an actual set of data to compare and analyze different attributes.  We will be using an animal data set that has 101 animals and various attributes about them.  To find the data, you can go to this link which is a Google Sheets template: [link](https://docs.google.com/spreadsheets/d/1asDk3ut3HyWBDQPqMfdh1lQ7scmwQM1stqaSRJd1EuY/edit?usp=sharing).
 
-After opening the link, you will want to save your own version of the Google Sheets file by going to File -> Make a copy from the menu and you can rename it to whatever you would like.
+After opening the link, you will want to save your own version of the Google Sheets file by going to `File -> Make a copy` from the menu and you can rename it to whatever you would like.
 
 ### Exploring the data
 
