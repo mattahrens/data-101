@@ -58,6 +58,32 @@ OK, now you've seen functions in action to build a query for our datasets, so no
 As we build a query, we first start with what question we want to ask of the dataset and then we build the query to represent that question.
 
 ### What auther published the most books in 2002? 
+```
+books_df[books_df['Year-Of-Publication'] == '2002'].groupby('Book-Author').count().sort_values(by=['ISBN'], ascending=False)
+```
+
+For this query, we are added a filter based on the `Year-Of-Publication` field.  To check to make sure the publication year is 2002, we add the `==` operator to check that it is true.  
+
+### How many books start with each letter of the alphabet?
+
+For this query, we first need to create a new field in the books dataset that represents what the first letter of the book is:
+```
+books_df['Book-First-Letter'] = books_df['Book-Title'].astype(str).str[0]
+```
+Then we can do the query to count how many books start with each first letter:
+```
+books_df.groupby('Book-First-Letter').count().head(25)
+```
+
+OK, now that you've done a couple examples yourself, try to build queries to answer these questions
+- What is the age of the users who did reviews grouped by each age?  Hint: you will have to use the users dataset for this query.
+- What is the overall average age of users?  Hint: you will have to use the `mean()` function.
+- What is the number of ratings at each ratings (0 - 10)?  Hint: you will have to the use the ratings dataset.
+- What is the overall average book rating from all ratings?  Hint: you will have to use the `mean()` function.
+- How many distinct authors are in the dataset?  Hint: you will have to use the books dataset and the `nunique()` function.
+
+If you have successfully built all of those queries to answer the questions, then you are ready to move on.
 
 ## Summary
+
 
