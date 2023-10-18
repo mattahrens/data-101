@@ -78,11 +78,11 @@ books_df.groupby('Book-First-Letter').count().head(25)
 ### Build your own queries
 
 OK, now that you've done a couple examples yourself, try to build queries to answer these questions
-1 What is the age of the users who did reviews grouped by each age?  Hint: you will have to use the users dataset for this query.
-2 What is the overall average age of users?  Hint: you will have to use the `mean()` function.
-3 What is the number of ratings at each ratings (0 - 10)?  Hint: you will have to the use the ratings dataset.
-4 What is the overall average book rating from all ratings?  Hint: you will have to use the `mean()` function.
-5 How many distinct authors are in the dataset?  Hint: you will have to use the books dataset and the `nunique()` function.
+1. What is the age of the users who did reviews grouped by each age?  Hint: you will have to use the users dataset for this query.
+2. What is the overall average age of users?  Hint: you will have to use the `mean()` function.
+3. What is the number of ratings at each ratings (0 - 10)?  Hint: you will have to the use the ratings dataset.
+4. What is the overall average book rating from all ratings?  Hint: you will have to use the `mean()` function.
+5. How many distinct authors are in the dataset?  Hint: you will have to use the books dataset and the `nunique()` function.
 
 If you have successfully built all of those queries to answer the questions, then you are ready to move on.
 
