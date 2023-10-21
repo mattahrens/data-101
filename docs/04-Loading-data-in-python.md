@@ -63,12 +63,16 @@ The `book-crossings.zip` file that you downloaded will contain 3 different comma
 Now we can load the CSV files into dataframes using the `read_csv` function.  The `read_csv` function will convert the CSV files into the dataframe format so we can do other functions on the data.
 
 ```
-ratings_df = pd.read_csv('BX-Book-Ratings.csv', delimiter=';', encoding='latin-1', on_bad_lines='skip')
-books_df = pd.read_csv('BX-Books.csv', delimiter=';', encoding='latin-1', on_bad_lines='skip')
-users_df = pd.read_csv('BX-Users.csv', delimiter=';', encoding='latin-1', on_bad_lines='skip')
+ratings_df = pd.read_csv('BX-Book-Ratings.csv', delimiter=';', encoding='latin-1', on_bad_lines='skip', 
+                         dtype={'User-ID': str, 'Age': int})
+books_df = pd.read_csv('BX-Books.csv', delimiter=';', encoding='latin-1', on_bad_lines='skip', 
+                       dtype={'ISBN': str, 'Book-Title': str, 'Book-Author': str, 'Year-Of-Publication': str, 
+                              'Publisher': str, 'Image-URL-S': str, 'Image-URL-M': str, 'Image-URL-L': str})
+users_df = pd.read_csv('BX-Users.csv', delimiter=';', encoding='latin-1', on_bad_lines='skip',
+                       dtype={'User-ID': str, 'Book-Rating': float})
 ```
 
-The read_csv function takes in parameters on how to load data, including what separates the fields (a semicolon instead of a comma), what type of character encoding (latin-1) and if you should fail the program on bad lines or skip (we want to skip).  After we've loaded the datasets into dataframes, we can look print out the contents of each dataframe with the print function.
+The read_csv function takes in parameters on how to load data, including what separates the fields (a semicolon instead of a comma), what type of character encoding (latin-1) and if you should fail the program on bad lines or skip (we want to skip).  Additionally, we have specified the type of each field in each dataset using the `dtype` parameter in the function.  Doing so will help to make sure the data is correctly loaded.  After we've loaded the datasets into dataframes, we can look print out the contents of each dataframe with the print function.
 
 ```
 print(ratings_df)

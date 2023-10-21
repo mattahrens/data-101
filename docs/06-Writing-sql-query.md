@@ -52,5 +52,50 @@ The last keyword that we'll look at is the **ORDER BY** keyword.  This is simila
 
 ## Practice: Building SQL queries in Python
 
+Now that we have looked at all the main keywords in a SQL query, it's time to start writing our own SQL queries in Python.  To start, we'll first have to install a package that allows us to write SQL queries using the Pandas library in Python.  Create a new cell in your notebook and add these lines:
+
+```
+!pip install pandasql 'sqlalchemy<2.0'
+from pandasql import sqldf
+```
+
+To start, we'll build a SQL query with the same question we asked in the last lesson: what author published the most books in 2002?  As a reminder, here was the code we used last lesson using functions:
+```
+books_df[books_df['Year-Of-Publication'] == '2002'].groupby('Book-Author').count().sort_values(by=['ISBN'], ascending=False)
+```
+
+Now let's see how that query would look in SQL:
+```
+query = """
+   SELECT `Book-Author`, count(*) as total
+   FROM books_df
+   WHERE `Year-Of-Publication` = '2002'
+   GROUP BY `Book-Author`
+   ORDER BY total desc
+   """
+sqldf(query)
+```
+
+Here we can see how a SQL query expresses the question we are asking of the dataset.  In the SELECT keyword, we pick what fields we want in the output and we give the `count(*)` function to say we want to see the total amount of books.  In the FROM part of the query, we choose our dataset to be `books_df`.  We filter only for book that were published in the year 2002 in the WHERE part.  Then we use the GROUP BY keyword to specify that we're grouping by author.  And finally, we order by the total count in descending order to show the author with the most books listed first.
+
+Now let's try another of the questions we answered last lesson: how many books start with each letter of the alphabet?  To do so, we'll reuse the code from last time to create a new field representing the first column of the book title.  Then we can build a query to give us our answer:
+```
+books_df['Book-First-Letter'] = books_df['Book-Title'].astype(str).str[0]
+query = """
+   SELECT `Book-First-Letter`, count(*) as total
+   FROM books_df
+   GROUP BY `Book-First-Letter`
+   ORDER BY total desc
+   """
+sqldf(query)
+```
+
+### Build your own queries
+
+Now you can try to build your own SQL queries.  Here are a few to start with:
+1. How many users are in the dataset?
+2. How many books are in the dataset?
+3. What are the minimum and maximum ratings that can be given for a book?  (Hint: use `MIN()` and `MAX()` functions in the SELECT part of your query.)
+
 ## Summary
 In this lesson, we learned about SQL and what the main keywords in SQL mean.  We then were able to write our own SQL queries in Python to ask questions of our data.  We saw how writing a SQL query is similar to using functions.
