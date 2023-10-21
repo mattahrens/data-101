@@ -40,10 +40,15 @@ The **WHERE** keyword allows us to add a filter in a query.  This is similar to 
 
 ### GROUP BY
 
+The **GROUP BY** keyword should be familiar as we have using the `groupby()` function already and this does the exact same thing.  It allows us to group records by a specific field.  In the example above, the query is grouping the art data by name so that when the fields are selected, it calculates the minimum year of each name of art through the `MIN(year)` selection.  You can group by multiple fields in a query if needed.
+
 ### HAVING
+
+The **HAVING** keyword is a special type of filter that is done after you have completed doing the earlier parts of the query.  In the art example, the HAVING filter is done after you have already selected the name and minimum year for the art; it filters to keep records that have a minimum year less than 1700.  
 
 ### ORDER BY
 
+The last keyword that we'll look at is the **ORDER BY** keyword.  This is similar to the `sort_values()` function we used in the previous lesson.  It allows the output records to be sorted by a particular value that is part of the query.  In the art query, it sorts by the minimum year for the artwork.
 
 ## Practice: Building SQL queries in Python
 
