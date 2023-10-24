@@ -22,7 +22,7 @@ Remember that we can filter data in a SQL query in the **WHERE** part of the que
 
 When working with a field that is a number, you can do various expressions to represent the filter.  We've seen the `=` expression but you can also do `!=` which equates to does not equal.  You also can do `<`, `>`, `<=`, `>=` which are related to less than or greater than and also those expressions with equality.  Hopefully they are familiar to you from other math lessons that you've had.
 
-When working with a field that is a string, you can still use the `=` and `!=` expressions for strings to exactly match or not match.  Another expression you can use is the **LIKE** keywordwhich tries to match a string with part of the record in the dataset.  For example, if you wanted to filter out books that had `Harry Potter` in the title, you couldn't do an `=` or `!=` without listing all the titles which you may not know.  Instead you could use the **LIKE** keyword with a expression such as this:
+When working with a field that is a string, you can still use the `=` and `!=` expressions for strings to exactly match or not match.  Another expression you can use is the **LIKE** keyword which tries to match a string with part of the record in the dataset.  For example, if you wanted to filter out books that had `Harry Potter` in the title, you couldn't do an `=` or `!=` without listing all the titles which you may not know.  Instead you could use the **LIKE** keyword with a expression such as this:
 ```
 `Book-Title` LIKE '%Harry Potter%'
 ```
