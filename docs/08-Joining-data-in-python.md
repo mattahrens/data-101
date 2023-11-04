@@ -35,7 +35,7 @@ When you are doing a join, the fields that you specify as part of the join condi
 
 The join key between the books and ratings datasets is the `ISBN` field while the join key between the ratings and users datasets is the `User-ID` field.  
 
-## Practice: 
+## Practice: Writing join queries
 
 Now that we've walked through what a join is and understand the join keys for our books data, let's write some join queries in SQL.  For our first query, let's answer the question for what are the books that have the most ratings.
 
