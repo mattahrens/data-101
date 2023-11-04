@@ -26,9 +26,63 @@ The line chart is good for showing trends across data on the x-axis.  The bar ch
 
 ![image](images/10-bar_chart.png)
 
-![image](images/10-pie_chart.png)
+The bar chart shows a similar view as the line chart in showing a trend between values on the x-axis.  The scatterplot chart is a similar view of the data, but it shows dots at each point instead of a line or bar.
+
 ![image](images/10-scatter_plot.png)
-## Practice: 
+
+The final basic visualization we'll look at is a pie chart.  It is useful for comparing how much of a total that each value represents.  With our data, it shows how much of the total number of ratings each rating value has.
+
+![image](images/10-pie_chart.png)
+
+The pie chart shows a different trend in emphasing how many 0 ratings there are.  Whereas the other charts show that in some detail, they also show a trend that higher ratings have more ratings (other than 0).
+
+When you have data that you want to visualize, choosing the right visualization is important to make sure that it gives the information you want.  Here's a guide on choosing between the 4 vvisualizations we have discussed:
+
+![image](images/10-chart_types.png)
+
+## Practice: Building data visualizations in Python
+
+Now we're ready to try some more advanced visualizations with our data.  Let's start with visualization the number of rating for each year of publication between the years of 1983 and 2002.  We'll need to join the ratings and books data.  Then we'll plot the results using a bar chart.
+
+```
+query = """
+  SELECT `Year-Of-Publication` as year, count(`Book-Rating`) as rating_count
+  FROM ratings_df
+  INNER JOIN books_df
+  ON ratings_df.ISBN = books_df.ISBN
+  WHERE year >= 1983 and year <= 2002
+  GROUP BY year
+  ORDER BY year asc
+"""
+year_counts = sqldf(query)
+year_counts.plot.bar(x='year', y='rating_count')
+```
+You can see that the bar chart shows us how the number of ratings increased for books published throughout the time period.
+
+Let's take a look at another query, this time asking what the number of ratings for each age of users is.  We'll join the ratings and users data and use a line chart for this visualization.
+
+```
+query = """
+  SELECT `Age` as age, count(`Book-Rating`) as rating_count
+  FROM ratings_df
+  INNER JOIN users_df
+  ON ratings_df.`User-ID` = users_df.`User-ID`
+  WHERE age > 0 and age < 100
+  GROUP BY age
+  ORDER BY age asc
+"""
+
+age_counts = sqldf(query)
+age_counts.plot.line(x='age', y='rating_count')
+```
+The line chart shows us that the most number of ratings comes for users around the age of 30. 
+
+## Practice: Build your own visualizations
+
+Here are some visualization challenges for you to try out:
+- Create a line chart to show the number of unique users who gave ratings per year of publication from 1995 to 2005.  Hint: you will have to use the `DISTINCT` keyword.
+- Create a pie chart for the number of books per year of publication from 1995 to 2005.  
+- Create a scatter plot to show the relationship between year of publication and average book rating (for 1995 - 2005).  Each book should be a single point in the plot.
 
 ## Summary
-
+In this lesson, we explored 4 basic data visualizations and how they differ in displaying information about a dataset.  We then used various plot functions in Python to display different types of data from the books datasets.
