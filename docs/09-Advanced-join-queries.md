@@ -27,7 +27,7 @@ We joined the books and ratings data and also included a filter for Harry Potter
 
 In the query, you can see how there are two separate `INNER JOIN` sections as each of them will join two datasets together to allow all three to be combined.
 
-Now let's look at a left join for an example of bringing two datasets together where we have all the records from one dataset and then add fields from another in our query.  This query is figuring out the books with the highest ratings if they have more than 10 ratings:
+Now let's look at a left join for an example of bringing two datasets together where we have all the records from one dataset and then add fields from another in our query.  This query is asking which books have with the highest ratings, given that the book has more than 10 ratings:
 
 ![image](images/09-leftjoin_query.png)
 
@@ -39,9 +39,55 @@ There's a lot going on in this query, so let's take note of a few key parts:
 ## Practice: Writing your own advanced join queries 
 
 Now you're ready to write your own advanced join queries in SQL with our books datasets.  Here are a few challenging queries to write:
-- What user location has the most number of book ratings?
-- What publication year has the least popular books by average rating that has more than 10 ratings?
-- What age of users has the highest ratings for books that were published between 2000 and 2003?
+1. What user location has the most number of book ratings?
+2. What publication year has the least popular books by average rating that has more than 10 ratings?
+3. What age of users has the highest average rating for books that were published between 2000 and 2003?
 
 ## Summary
 In this lesson, we wrote more advanced queries including a multi-join query to join three datasets together and also a left join.  We also saw how join queries can include other functions and filters to get the answer desired from the query.
+
+## Answer key
+1. What user location has the most number of book ratings?
+```
+query = """
+  SELECT `Location`, count(`Book-Rating`) as rating_cnt
+  FROM ratings_df
+  INNER JOIN users_df
+  ON ratings_df.`User-ID` = users_df.`User-ID`
+  GROUP BY users_df.`Location`
+  ORDER BY rating_cnt desc
+"""
+sqldf(query)
+```
+
+2. What publication year has the least popular books by average rating that has more than 10 ratings?
+```
+query = """
+  SELECT `Year-Of-Publication`, AVG(`Book-Rating`) as rating_avg
+  FROM books_df
+  INNER JOIN ratings_df
+  ON books_df.`ISBN` = ratings_df.`ISBN`
+  GROUP BY `Year-Of-Publication`
+  HAVING COUNT(`Book-Rating`) > 10
+  ORDER BY rating_avg
+"""
+sqldf(query)
+```
+
+3. What age of users has the highest average rating for books that were published between 2000 and 2003?
+```
+query = """
+  SELECT `Age`, AVG(`Book-Rating`) as rating_avg
+  FROM ratings_df
+  INNER JOIN users_df
+  ON ratings_df.`User-ID` = users_df.`User-ID`
+  INNER JOIN books_df
+  ON ratings_df.`ISBN` = books_df.`ISBN`
+  WHERE `Year-Of-Publication` >= 2000 and `Year-Of-Publication` <= 2003
+  GROUP BY users_df.`Age`
+  ORDER BY rating_avg desc
+"""
+sqldf(query)
+```
+
+
