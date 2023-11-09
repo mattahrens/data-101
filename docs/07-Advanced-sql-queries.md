@@ -20,13 +20,13 @@ Now that we've learned how to write SQL queries to ask questions of data, we're 
 
 Remember that we can filter data in a SQL query in the **WHERE** part of the query.  Last lesson, we did a simple query for authors in the year 2002 using the `=` expression.  We're going to explore different ways to filter data as that is a key part of a query that helps us get the answers from the data that we are looking for.
 
-When working with a field that is a number, you can do various expressions to represent the filter.  We've seen the `=` expression but you can also do `!=` which equates to does not equal.  You also can do `<`, `>`, `<=`, `>=` which are related to less than or greater than and also those expressions with equality.  Hopefully they are familiar to you from other math lessons that you've had.
+When working with a field that is a number, you can do various expressions to represent the filter.  We've seen the `=` expression but you can also use `!=` which equates to does not equal.  You can also use `<`, `>`, `<=`, `>=` which are related to less than or greater than and also those expressions with equality.  Hopefully they are familiar to you from other math lessons that you've had.
 
 When working with a field that is a string, you can still use the `=` and `!=` expressions for strings to exactly match or not match.  Another expression you can use is the **LIKE** keyword which tries to match a string with part of the record in the dataset.  For example, if you wanted to filter out books that had `Harry Potter` in the title, you couldn't do an `=` or `!=` without listing all the titles which you may not know.  Instead you could use the **LIKE** keyword with a expression such as this:
 ```
 `Book-Title` LIKE '%Harry Potter%'
 ```
-You can see the extract `%` characters around the word that you are matching (Harry Potter).  The `%` characters represent that any other characters can be present in that place.  In our example, we're saying that anything can go before or after `Harry Potter` as long as that is in the field.   
+You can see the extra `%` characters around the word that you are matching (Harry Potter).  The `%` characters represent that any other characters can be present in that place.  In our example, we're saying that anything can go before or after `Harry Potter` as long as that is in the field.   
 
 ### Distinct Counts
 
@@ -50,13 +50,13 @@ The query returns a single number which represents the number of distinct publis
 
 To answer this question, we'll have to make use of the **LIKE** operator to filter records with the location of the United States.  Specifically, we'll want to look for the matching string `usa`.  Here's the query to use:
 ```
-q = """
+query = """
   SELECT `Location`, count(*) as total
   FROM users_df
   WHERE `Location` LIKE "%usa%"
   GROUP BY `Location`
   ORDER BY total desc
-sqldf(q)
+sqldf(query)
 """
 ```
 Notice that we are adding an **ORDER BY** as the end of the query to sort the data from most users to least.
@@ -65,14 +65,14 @@ Notice that we are adding an **ORDER BY** as the end of the query to sort the da
 
 This will make use of the **WHERE** clause to filter out the ratings that we want.  Here's the query:
 ```
-q = """"
+query = """"
   SELECT `Book-Rating`, count(*) as total
   FROM ratings_df
   WHERE `Book-Rating` >= 6 and `Book-Rating` <= 10
   GROUP BY `Book-Rating`
   ORDER BY `Book-Rating`
 """
-sqldf(q)
+sqldf(query)
 ```
 
 ### Build your own queries
@@ -84,3 +84,47 @@ Now try to build your own advacned SQL queries.  Here are a few to start with:
 
 ## Summary
 In this lesson, we learned about how to do more advanced queries, specifically in how to filter records for number and string fields.  We also learned about how to count unique values in a dataset with the **DISTINCT** keyword.
+
+## Answer key
+1. What book (ISBN) has the most ratings = 10 and which book (ISBN) has the most ratings = 0?
+```
+query = """
+  SELECT `ISBN`, count(*) as total
+  FROM ratings_df
+  WHERE `Book-Rating` = 10
+  GROUP BY `ISBN`
+  ORDER BY total desc
+"""
+sqldf(query)
+```
+
+```
+query = """
+  SELECT `ISBN`, count(*) as total
+  FROM ratings_df
+  WHERE `Book-Rating` = 0
+  GROUP BY `ISBN`
+  ORDER BY total desc
+"""
+sqldf(query)
+```
+
+2. What is the average age for the top cities in the United States for users in the dataset? (Hint: use the **AVG** keyword in your SQL query.)
+```
+query = """
+  SELECT AVG(`Age`)
+  FROM users_df
+  WHERE `Location` LIKE "%usa%"
+"""
+sqldf(query)
+```
+
+3. How many unique publishers did J.K. Rowling use for her Harry Potter books?
+```
+query = """
+  SELECT count(distinct `Publisher`)
+  FROM books_df
+  WHERE `Book-Title` LIKE "%Harry Potter%" and `Book-Author` LIKE "%Rowling%"
+"""
+sqldf(query)
+```

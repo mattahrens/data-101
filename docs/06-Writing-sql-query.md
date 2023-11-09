@@ -13,7 +13,7 @@ description: Lesson 6 - Writing SQL to query data
 
 ## Concept
 
-The past couple lessons we learned how to build data queries using functions in Python.  Now we're going to shift to writing queries in a standardized language for queries called SQL.  SQL is a language that is used in many different languages and frameworks where datasets reside.  Learning SQL is important because you can use it in many different ways.
+The past couple lessons we learned how to build data queries using functions in Python.  Now we're going to shift to writing queries in a standardized language for queries called SQL.  SQL is a language that is used in many different databases and frameworks where datasets reside.  Learning SQL is important because you can use it in many different ways.
 
 Building a query in SQL involves using specific keywords to represent how you are interacting with the data.  Here is an overview of the main keywords that are present in a query along with a specific example query of art datasets:
 
@@ -40,7 +40,7 @@ The **WHERE** keyword allows us to add a filter in a query.  This is similar to 
 
 ### GROUP BY
 
-The **GROUP BY** keyword should be familiar as we have using the `groupby()` function already and this does the exact same thing.  It allows us to group records by a specific field.  In the example above, the query is grouping the art data by name so that when the fields are selected, it calculates the minimum year of each name of art through the `MIN(year)` selection.  You can group by multiple fields in a query if needed.
+The **GROUP BY** keyword should be familiar as we have used the `groupby()` function already and this does the exact same thing.  It allows us to group records by a specific field.  In the example above, the query is grouping the art data by name so that when the fields are selected, it calculates the minimum year of each name of art through the `MIN(year)` selection.  You can group by multiple fields in a query if needed.
 
 ### HAVING
 
@@ -99,3 +99,30 @@ Now you can try to build your own SQL queries.  Here are a few to start with:
 
 ## Summary
 In this lesson, we learned about SQL and what the main keywords in SQL mean.  We then were able to write our own SQL queries in Python to ask questions of our data.  We saw how writing a SQL query is similar to using functions.
+
+## Answer key
+1. How many users are in the dataset?
+```
+query = """
+   SELECT count(*)
+   FROM users_df
+   """
+sqldf(query)
+```
+2. How many books are in the dataset?
+```
+query = """
+   SELECT count(*)
+   FROM books_df
+   """
+sqldf(query)
+```
+3. What are the minimum and maximum ratings that can be given for a book?  (Hint: use `MIN()` and `MAX()` functions in the SELECT part of your query.)
+```
+query = """
+   SELECT MIN(`Book-Rating`), MAX(`Book-Rating`)
+   FROM ratings_df
+   """
+sqldf(query)
+```
+
