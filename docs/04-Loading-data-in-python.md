@@ -20,7 +20,7 @@ We are shifting from using Google Sheets to now using the Python programming lan
 
 The dataframe structure should look similar to the Google Sheets data that we have looked at previously.  You will see rows and columns of data to represent the records and fields for the dataset.  As we write Python code to work with dataframes, we will start by using **functions** -- modules of code that accomplish a specific task -- to run queries.  
 
-During the practice portion of the lesson, you will be using a Google Colab Notebook to write code and see results.  To create a Google Colab notebook, go to [[https://colab.research.google.com]] and then navigate to `File -> New Notebook`.  
+During the practice portion of the lesson, you will be using a Google Colab Notebook to write code and see results.  To create a Google Colab notebook, go to <https://colab.research.google.com> and then navigate to `File -> New Notebook`.  
 
 ![image](images/04-new_colab_notebook.png)
 
@@ -28,7 +28,7 @@ Once you have your new notebook, you are ready to being the practice portions of
 
 ## Practice: Creating a dataset in Python using Google Colab
 
-If your new notebook, you can see add snippets of code into what is called a **cell** and then run the cell to execute the code.  To start, let's put in a simple statement to print out text and then run the cell by clicking the play button.  This is what you should see after the cell is played:
+In your new notebook, you can see add snippets of code into what is called a **cell** and then run the cell to execute the code.  To start, let's put in a simple statement to print out text and then run the cell by clicking the play button.  This is what you should see after the cell is played:
 
 ![image](images/04-colab_hello_world.png)
 
@@ -37,7 +37,7 @@ Going forward, you can copy the code that is displayed here into a new cell in y
 ```
 import pandas as pd
 
-country_data = {'Country': ['US', 'Brazil', 'Spain', 'Thailand'], 'Population (millions)': [331.9, 214.3]}
+country_data = {'Country': ['US', 'Brazil'], 'Population (millions)': [331.9, 214.3]}
 df = pd.DataFrame(country_data)
 print(df) 
 ```
@@ -48,7 +48,7 @@ Let's go through this code line by line to understand what is happening.  The fi
 
 ## Practice: Loading a dataset in Python using Google Colab
 
-Now we're ready to move one from creating a dataset to loading a dataset.  In this practice, we will be loading a dataset containing book reviews.  Before loading the dataset into dataframes we first have to download it with this code in a new cell in your notebook:
+Now we're ready to move on from creating a dataset to loading a dataset.  In this practice, we will be loading a dataset containing book reviews.  Before loading the dataset into dataframes we first have to download it with this code in a new cell in your notebook:
 
 ```
 !wget https://cdn.freecodecamp.org/project-data/books/book-crossings.zip
@@ -78,11 +78,11 @@ The read_csv function takes in parameters on how to load data, including what se
 print(ratings_df)
 ```
 
-You can add similar cells for the `books_df` and `user_df` dataframes as well.  To see full information about the fields in a dataframe, you can use the `info()` function.
+You can add similar cells to print the `books_df` and `user_df` dataframes as well.  To see full information about the fields in a dataframe, you can use the `info()` function.
 
 ```
 ratings_df.info()
 ``` 
 
 ## Summary
-In this lesson, we learned how to use Python to create our own dataset and to load a dataset from existing files that we downloaded.  We were introduced to the concept of a dataframe with is how data is represented in Python.  We also learned about functions which are modules of code that allow us to accomplish a specific task.  Some of the functions we practiced were `print()` and `describe()`.
+In this lesson, we learned how to use Python to create our own dataset and to load a dataset from existing files that we downloaded.  We were introduced to the concept of a dataframe with is how data is represented in Python.  We also learned about functions which are modules of code that allow us to accomplish a specific task.  Some of the functions we practiced were `info()`, `print()`, and `read_csv()`.

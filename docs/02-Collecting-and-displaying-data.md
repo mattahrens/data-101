@@ -15,7 +15,7 @@ description: Lesson 2 - Collecting and displaying data
 ## Concept
 
 ### How to collect data
-We now can build on our definition of data as a fact that is attributable to something and that can be compared by thinking about how to collect data.  The process of collect data simply involves making a record of the facts that we want to use later on.  Before we start collecting data, there are some important things to think about:
+We now can build on our definition of data as a fact that is attributable to something and that can be compared by thinking about how to collect data.  The process of collecting data simply involves making a record of the facts that we want to use later on.  Before we start collecting data, there are some important things to think about:
 
 - What is the main object that we are attributing the facts to -- a person, a country, etc.?
 - What facts do we want to collect?
@@ -25,19 +25,19 @@ Let's look at each of these individually to help see the importance of thoughtfu
 
 **What is the object we are interested in?**
 
-It is best to start with the object of our data as that will then help us answer the other questions.  In figuring out the object of our data collection,we want to think about what is the main object that we are looking to analyze.  If it is a person, then we can think about what specific attributes related to a person that matter to us in what we're trying to accomplish.  If it is a country, then we can think about attributes that are related to a country.  
+It is best to start with the object of our data as that will then help us answer the other questions.  In figuring out the object of our data collection, we want to think about what is the main object that we are looking to analyze.  If it is a person, then we can think about what specific attributes related to a person that matter to us in what we're trying to accomplish.  If it is a country, then we can think about attributes that are related to a country.  
 
 It is possible to have multiple objects that are related that you want to attribute facts to.  There could be different layers that you want to group together.  A simple example would be countries and cities.  You want to collect data about cities, but you also want to keep track of what country a city is associated with.  While the country could be considered another piece of data about the city, it is better to think about it as another part of the object that you are collecting data about.
 
 **What facts do we want to collect?**
 
-Once you have the object identified, then you can move on to the facts that you want to collect.  In some respects, this is the simplest question because you can brainstorm all the various items that are interesting for you.  You can think of the various attributes for an object that are relevant and keep track of them as you will use them when collecting data.
+Once you have the object identified, then you can move on to the facts that you want to collect.  In some respects, this is the simplest question because you can brainstorm all the various items that are interesting for you.  You can think of the various attributes for an object that are relevant and keep track of them as you will use them when collecting data.  If you are collecting facts about human beings, you can collect information about their hair color, eye color, whether they were glasses or not, their height, and so on.
 
 **How will the facts be compared?**
 
 The final question helps to shape the facts that you want to collect.  After you have the list of facts that you are interested in collecting, you want to make sure you know how you will assign the facts as you collect them.  Here is where you start to define how you will measure and collect facts.
 
-For example, in the weather example, are you going to collect the type of weather -- windy, sunny, rainy, cloudy -- for a given time period or will you collect a specific quantitative measurement such as temperature or wind speed?  A way to think about this is what you have to note down for each type of fact what are the types of values you will collect for each fact.  Or more specifically, you can establish a *range* of possible values for a given fact. 
+If you are collecting data regarding weather, are you going to collect the type of weather -- windy, sunny, rainy, cloudy -- for a given time period or will you collect a specific quantitative measurement such as temperature or wind speed?  One way to think about this is that you have to note down what are the types of values you will collect for each fact.  Or more specifically, you can establish a *range* of possible values for a given fact. 
 
 It's time to look at some examples to help us understand all of this better.
 
@@ -102,11 +102,13 @@ We can take our exploration a step further by displaying the data. To create a c
 
 ![image](images/02-gsheet_chart.png)
 
+The chart shows us a breakdown of total attribute values by how each value.  You will notice that the highest part of the histogram chart shows around the values of 9 and 10.
+
 ## Practice: Collect Your Data
 
-For an activity to collect data, you will want to go to your room (or think about what is in your room if you were at school) and collect data about what you have.  You can think about how you would want to organize the data about your room in different ways.  You can keep of count of types of objects in your room -- clothes, toys, pictures, clothes, etc.  Or you can also add attributes for objects in your room such as color or size.  
+For an activity to collect data, you will want to go to your room (or think about what is in your room if you are at school) and collect data about what you have.  You can think about how you would want to organize the data about your room in different ways.  You can keep of count of types of objects in your room -- clothes, toys, pictures, clothes, etc.  Or you can also add attributes for objects in your room such as color or size.  
 
-The output should be a set of records with fields representing what is in your room.
+The output should be a set of records with fields representing what is in your room.  Each object would be its own record in your data.
 
 ## Summary
 
