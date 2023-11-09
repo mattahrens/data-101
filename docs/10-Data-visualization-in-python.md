@@ -14,7 +14,7 @@ description: Lesson 10 - Data visualization in Python
 
 ## Concept
 
-We're going to go beyond querying data and now visualizing data.  Data visualization is important because it can help us understand data in different ways than looking at records.  It can show us relationships or trends in the data that we are analyzing.  We're going to look at 4 basic data visualizations and how to use Python to display them.  We'll start by generating data that represents the count of ratings per rating (0 - 10).  Here is the query:
+We're going to go beyond querying data and look into how to visualize data.  Data visualization is important because it can help us understand data in different ways than looking at records.  It can show us relationships or trends in the data that we are analyzing.  We're going to look at 4 basic data visualizations and how to use Python to display them.  We'll start by generating data that represents the count of ratings per rating (0 - 10).  Here is the query:
 
 ![image](images/10-ratings_data.png)
 
@@ -71,7 +71,6 @@ query = """
   GROUP BY age
   ORDER BY age asc
 """
-
 age_counts = sqldf(query)
 age_counts.plot.line(x='age', y='rating_count')
 ```
@@ -80,9 +79,57 @@ The line chart shows us that the most number of ratings comes for users around t
 ## Practice: Build your own visualizations
 
 Here are some visualization challenges for you to try out:
-- Create a line chart to show the number of unique users who gave ratings per year of publication from 1995 to 2005.  Hint: you will have to use the `DISTINCT` keyword.
-- Create a pie chart for the number of books per year of publication from 1995 to 2005.  
-- Create a scatter plot to show the relationship between year of publication and average book rating (for 1995 - 2005).  Each book should be a single point in the plot.
+1. Create a line chart to show the number of unique users who gave ratings per year of publication from 1992 to 2002.  Hint: you will have to use the `DISTINCT` keyword.
+2. Create a pie chart for the number of books per year of publication from 1992 to 2002.  
+3. Create a scatter plot to show the relationship between year of publication and average book rating (for 1992 - 2002).  Each book should be a single point in the plot.
 
 ## Summary
 In this lesson, we explored 4 basic data visualizations and how they differ in displaying information about a dataset.  We then used various plot functions in Python to display different types of data from the books datasets.
+
+## Answer key
+1. Create a line chart to show the number of unique users who gave ratings per year of publication from 1992 to 2002.  Hint: you will have to use the `DISTINCT` keyword.
+```
+query = """
+  SELECT `Year-Of-Publication` as year, count(distinct(users_df.`User-ID`)) as users
+  FROM ratings_df
+  INNER JOIN users_df
+  ON ratings_df.`User-ID` = users_df.`User-ID`
+  INNER JOIN books_df
+  ON ratings_df.`ISBN` = books_df.`ISBN`
+  WHERE year >= 1992 and year <= 2002
+  GROUP BY year
+  ORDER BY year
+"""
+year_counts = sqldf(query)
+year_counts.plot.line(x='year', y='users')
+```
+
+2. Create a pie chart for the number of books per year of publication from 1992 to 2002.  
+```
+query = """
+  SELECT `Year-Of-Publication` as year, count(books_df.`ISBN`) as books
+  FROM ratings_df
+  INNER JOIN books_df
+  ON ratings_df.`ISBN` = books_df.`ISBN`
+  WHERE year >= 1992 and year <= 2002
+  GROUP BY year
+  ORDER BY year
+"""
+year_counts = sqldf(query)
+year_counts.plot.pie(x='year', y='books')
+```
+
+3. Create a scatter plot to show the relationship between year of publication and average book rating (for 1992 - 2002).  Each book should be a single point in the plot.
+```
+query = """
+  SELECT `Year-Of-Publication` as year, avg(`Book-Rating`) as rating_avg
+  FROM ratings_df
+  INNER JOIN books_df
+  ON ratings_df.`ISBN` = books_df.`ISBN`
+  WHERE year >= 1992 and year <= 2002
+  GROUP BY year
+  ORDER BY year
+"""
+year_counts = sqldf(query)
+year_counts.plot.scatter(x='year', y='rating_avg')
+```
