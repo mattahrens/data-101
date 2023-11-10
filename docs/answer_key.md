@@ -8,6 +8,7 @@ description: Answer Key
 Below are answers to the practice problems from various lessons from the course.
 
 ## Lesson 5
+
 1. What is the age of the users who did reviews grouped by each age?  Hint: you will have to use the users dataset for this query.
 ```
 users_df.groupby('Age').count().sort_values(by=['Age'])
@@ -34,6 +35,7 @@ books_df['Book-Author'].nunique()
 ```
 
 ## Lesson 6
+
 1. How many users are in the dataset?
 ```
 query = """
@@ -60,6 +62,7 @@ sqldf(query)
 ```
 
 ## Lesson 7
+
 1. What book (ISBN) has the most ratings = 10 and which book (ISBN) has the most ratings = 0?
 ```
 query = """
@@ -102,6 +105,7 @@ sqldf(query)
 ```
 
 ## Lesson 9
+
 1. What user location has the most number of book ratings?
 ```
 query = """
@@ -116,6 +120,7 @@ sqldf(query)
 ```
 
 2. What publication year has the least popular books by average rating that has more than 10 ratings?
+
 ```
 query = """
   SELECT `Year-Of-Publication`, AVG(`Book-Rating`) as rating_avg
@@ -130,6 +135,7 @@ sqldf(query)
 ```
 
 3. What age of users has the highest average rating for books that were published between 2000 and 2003?
+
 ```
 query = """
   SELECT `Age`, AVG(`Book-Rating`) as rating_avg
@@ -146,6 +152,7 @@ sqldf(query)
 ```
 
 ## Lesson 10
+
 1. Create a line chart to show the number of unique users who gave ratings per year of publication from 1992 to 2002.  Hint: you will have to use the `DISTINCT` keyword.
 ```
 query = """
@@ -164,6 +171,7 @@ year_counts.plot.line(x='year', y='users')
 ```
 
 2. Create a pie chart for the number of books per year of publication from 1992 to 2002.  
+
 ```
 query = """
   SELECT `Year-Of-Publication` as year, count(books_df.`ISBN`) as books
@@ -179,6 +187,7 @@ year_counts.plot.pie(x='year', y='books')
 ```
 
 3. Create a scatter plot to show the relationship between year of publication and average book rating (for 1992 - 2002).  Each book should be a single point in the plot.
+
 ```
 query = """
   SELECT `Year-Of-Publication` as year, avg(`Book-Rating`) as rating_avg
