@@ -120,7 +120,6 @@ sqldf(query)
 ```
 
 2. What publication year has the least popular books by average rating that has more than 10 ratings?
-
 ```
 query = """
   SELECT `Year-Of-Publication`, AVG(`Book-Rating`) as rating_avg
@@ -135,7 +134,6 @@ sqldf(query)
 ```
 
 3. What age of users has the highest average rating for books that were published between 2000 and 2003?
-
 ```
 query = """
   SELECT `Age`, AVG(`Book-Rating`) as rating_avg
@@ -171,7 +169,6 @@ year_counts.plot.line(x='year', y='users')
 ```
 
 2. Create a pie chart for the number of books per year of publication from 1992 to 2002.  
-
 ```
 query = """
   SELECT `Year-Of-Publication` as year, count(books_df.`ISBN`) as books
@@ -187,7 +184,6 @@ year_counts.plot.pie(x='year', y='books')
 ```
 
 3. Create a scatter plot to show the relationship between year of publication and average book rating (for 1992 - 2002).  Each book should be a single point in the plot.
-
 ```
 query = """
   SELECT `Year-Of-Publication` as year, avg(`Book-Rating`) as rating_avg
@@ -201,5 +197,3 @@ query = """
 year_counts = sqldf(query)
 year_counts.plot.scatter(x='year', y='rating_avg')
 ```
-
-
