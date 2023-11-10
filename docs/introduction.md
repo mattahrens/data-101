@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Introduction
 nav_order: 1
 permalink: /
 description: Index for Data 101
