@@ -44,6 +44,7 @@ query = """
    """
 sqldf(query)
 ```
+
 2. How many books are in the dataset?
 ```
 query = """
@@ -52,6 +53,7 @@ query = """
    """
 sqldf(query)
 ```
+
 3. What are the minimum and maximum ratings that can be given for a book?  (Hint: use `MIN()` and `MAX()` functions in the SELECT part of your query.)
 ```
 query = """
