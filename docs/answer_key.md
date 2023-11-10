@@ -75,7 +75,8 @@ query = """
   ORDER BY total desc
 """
 sqldf(query)
-
+```
+```
 query = """
   SELECT `ISBN`, count(*) as total
   FROM ratings_df
