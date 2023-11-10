@@ -66,6 +66,7 @@ sqldf(query)
 ## Lesson 7
 
 1. What book (ISBN) has the most ratings = 10 and which book (ISBN) has the most ratings = 0?
+
 ```
 query = """
   SELECT `ISBN`, count(*) as total
