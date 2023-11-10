@@ -88,29 +88,3 @@ If you have successfully built all of those queries to answer the questions, the
 
 ## Summary
 In this lesson, we learned how to write queries in Python using functions.  We explored our book ratings datasets to ask questions of the data.  We used different functions to help us get the answers we wanteds.  Some of the functions included: `count()`, `groupby()`, `sort_values()`, and `head()`.
-
-## Answer key
-1. What is the age of the users who did reviews grouped by each age?  Hint: you will have to use the users dataset for this query.
-```
-users_df.groupby('Age').count().sort_values(by=['Age'])
-```
-
-2. What is the overall average age of users?  Hint: you will have to use the `mean()` function.
-```
-users_df['Age'].mean()
-```
-
-3. What is the number of ratings at each ratings (0 - 10)?  Hint: you will have to the use the ratings dataset.
-```
-ratings_df.groupby('Book-Rating').count().sort_values(by=['Book-Rating'])
-```
-
-4. What is the overall average book rating from all ratings?  Hint: you will have to use the `mean()` function.
-```
-ratings_df['Book-Rating'].mean()
-```
-
-5. How many distinct authors are in the dataset?  Hint: you will have to use the books dataset and the `nunique()` function.
-```
-books_df['Book-Author'].nunique()
-```

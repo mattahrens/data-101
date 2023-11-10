@@ -99,30 +99,3 @@ Now you can try to build your own SQL queries.  Here are a few to start with:
 
 ## Summary
 In this lesson, we learned about SQL and what the main keywords in SQL mean.  We then were able to write our own SQL queries in Python to ask questions of our data.  We saw how writing a SQL query is similar to using functions.
-
-## Answer key
-1. How many users are in the dataset?
-```
-query = """
-   SELECT count(*)
-   FROM users_df
-   """
-sqldf(query)
-```
-2. How many books are in the dataset?
-```
-query = """
-   SELECT count(*)
-   FROM books_df
-   """
-sqldf(query)
-```
-3. What are the minimum and maximum ratings that can be given for a book?  (Hint: use `MIN()` and `MAX()` functions in the SELECT part of your query.)
-```
-query = """
-   SELECT MIN(`Book-Rating`), MAX(`Book-Rating`)
-   FROM ratings_df
-   """
-sqldf(query)
-```
-
