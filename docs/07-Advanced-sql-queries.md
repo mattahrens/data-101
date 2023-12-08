@@ -65,7 +65,7 @@ Notice that we are adding an **ORDER BY** as the end of the query to sort the da
 
 This will make use of the **WHERE** clause to filter out the ratings that we want.  Here's the query:
 ```
-query = """"
+query = """
   SELECT `Book-Rating`, count(*) as total
   FROM ratings_df
   WHERE `Book-Rating` >= 6 and `Book-Rating` <= 10
