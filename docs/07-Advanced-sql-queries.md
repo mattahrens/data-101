@@ -56,8 +56,8 @@ query = """
   WHERE `Location` LIKE "%usa%"
   GROUP BY `Location`
   ORDER BY total desc
-sqldf(query)
 """
+sqldf(query)
 ```
 Notice that we are adding an **ORDER BY** as the end of the query to sort the data from most users to least.
 
